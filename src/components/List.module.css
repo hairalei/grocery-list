@@ -3,14 +3,13 @@
   text-transform: capitalize;
   font-size: 2rem;
   padding: 1rem 0;
-  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
   border-bottom: 1px solid #d4d4d4;
 
   display: flex;
 }
 
 .list:last-of-type {
-  margin-bottom: 0;
   border-bottom: none;
 }
 

@@ -1,6 +1,5 @@
 .form {
   display: flex;
-  margin-bottom: 1.6rem;
 }
 
 .search {
@@ -39,4 +38,18 @@
 
 .btn:focus-visible {
   outline: 5px dotted #0090c5;
+}
+
+@media (max-width: 400px) {
+  .form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+    min-height: 100%;
+  }
 }
