@@ -1,0 +1,13 @@
+.card {
+  max-width: 70rem;
+  width: 100%;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 2rem 1rem;
+  }
+}

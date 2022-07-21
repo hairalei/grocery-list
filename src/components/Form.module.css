@@ -1,0 +1,42 @@
+.form {
+  display: flex;
+  margin-bottom: 1.6rem;
+}
+
+.search {
+  width: 100%;
+  height: 3rem;
+  font-size: 2rem;
+  padding: 2rem 1rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  outline: none;
+}
+
+.btn {
+  color: inherit;
+  font-family: inherit;
+  font-size: 2rem;
+  min-height: 3rem;
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+  background-color: #9999cc;
+  cursor: pointer;
+  border: 1px solid #9999cc;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+
+  outline: none;
+}
+
+.btn:hover {
+  opacity: 0.95;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus-visible {
+  outline: 5px dotted #0090c5;
+}

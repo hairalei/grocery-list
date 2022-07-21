@@ -1,13 +1,48 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 10rem 0;
+
+  background-color: #378b29;
+  background-image: linear-gradient(315deg, #378b29 0%, #74d680 74%);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(https://images.unsplash.com/photo-1598940603846-a1edd0ef2574?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  color: #002c00;
+  font-size: 1.6rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-family: "Pacifico", cursive;
+  color: #eee;
+  font-weight: 40;
+  text-align: center;
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
 }
