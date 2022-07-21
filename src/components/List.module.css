@@ -5,9 +5,33 @@
   padding: 1rem 0;
   margin-bottom: 0.5rem;
   border-bottom: 1px solid #d4d4d4;
+
+  display: flex;
 }
 
 .list:last-of-type {
   margin-bottom: 0;
   border-bottom: none;
+}
+
+.buttons {
+  margin-left: auto;
+}
+
+.btn {
+  margin-left: 1rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #777;
+}
+
+.btnEdit:hover {
+  color: #008bff;
+}
+
+.btnDelete:hover {
+  color: #ed195a;
 }
