@@ -46,3 +46,22 @@ h1 {
   font-size: 3.6rem;
   margin-bottom: 2rem;
 }
+
+.App {
+  position: relative;
+}
+
+.notif {
+  position: absolute;
+  top: -4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  color: #fff;
+  z-index: 99;
+}
