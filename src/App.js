@@ -91,6 +91,8 @@ function App() {
   };
 
   const handleClearAll = () => {
+    setNotifType("error");
+    setNotif("All items are deleted");
     setGroceryList([]);
     window.localStorage.removeItem("groceryList");
   };
