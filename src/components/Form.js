@@ -7,6 +7,7 @@ function Form({ item, handleAddItem, handleChangeInput }) {
       <input
         value={item}
         type="text"
+        placeholder="e.g. eggs"
         className={styles.search}
         onChange={handleChangeInput}
       />
