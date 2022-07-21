@@ -90,6 +90,11 @@ function App() {
     setNotif("Item deleted from the list");
   };
 
+  const handleClearAll = () => {
+    setGroceryList([]);
+    window.localStorage.removeItem("groceryList");
+  };
+
   //Save to local storage
   useEffect(() => {
     window.localStorage.setItem("groceryList", JSON.stringify(groceryList));
@@ -124,6 +129,11 @@ function App() {
           handleDeleteItem={handleDeleteItem}
           handleEditItem={handleEditItem}
         />
+        {groceryList.length > 0 && (
+          <button onClick={handleClearAll} className="btnClear">
+            Clear All
+          </button>
+        )}
       </Card>
     </main>
   );
