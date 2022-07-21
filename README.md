@@ -6,6 +6,10 @@ A simple CRUD app using ReactJS.
 
 ## Live preview
 
+https://grocery-list-psi.vercel.app/
+
+![grocery-app](public/GroceryList.gif)
+
 ## Features
 
 - Add item
