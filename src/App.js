@@ -130,6 +130,7 @@ function App() {
           item={item}
           handleAddItem={handleAddItem}
           handleChangeInput={handleChangeInput}
+          isEditing={isEditing}
         />
         <List
           groceryList={groceryList}

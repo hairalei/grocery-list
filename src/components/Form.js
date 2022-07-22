@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Form.module.css";
 
-function Form({ item, handleAddItem, handleChangeInput }) {
+function Form({ item, handleAddItem, handleChangeInput, isEditing }) {
   return (
     <form className={styles.form} onSubmit={handleAddItem}>
       <input
@@ -12,7 +12,7 @@ function Form({ item, handleAddItem, handleChangeInput }) {
         onChange={handleChangeInput}
       />
       <button type="submit" className={styles.btn}>
-        Submit
+        {isEditing ? "Edit" : "Submit"}
       </button>
     </form>
   );
