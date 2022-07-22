@@ -34,3 +34,26 @@
 .btnDelete:hover {
   color: #ed195a;
 }
+
+@media (max-width: 400px) {
+  .btn {
+    opacity: 0.5;
+  }
+  .btnEdit {
+    color: #008bff;
+  }
+
+  .btnDelete {
+    color: #ed195a;
+  }
+
+  .btnEdit:hover,
+  .btnEdit:active {
+    opacity: 1;
+  }
+
+  .btnDelete:hover,
+  .btnDelete:active {
+    opacity: 1;
+  }
+}
