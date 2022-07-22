@@ -9,6 +9,7 @@ A simple CRUD app using ReactJS.
 https://grocery-list-psi.vercel.app/
 
 ![grocery-app](public/GroceryList.gif)
+<img src="public/grocerylistmobile.png" alt="drawing" style="height:300px; transform: translateX(80%);"/>
 
 ## Features
 
