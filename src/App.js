@@ -13,8 +13,7 @@ function App() {
   const [item, setItem] = useState("");
   const [isEditing, setIsEditing] = useState(false);
   const [editID, setEditID] = useState("");
-  const [notif, setNotif] = useState("");
-  const [notifType, setNotifType] = useState("success");
+  const [alert, setAlert] = useState({ notifType: "", notif: "" });
   //
 
   //Functions
@@ -26,21 +25,29 @@ function App() {
   //For notification if success or error
   const checkValidation = (item) => {
     if (item.trim().length === 0) {
-      setNotifType("error");
-      setNotif("Please enter valid data");
+      setAlert({ notifType: "error", notif: "Please enter valid data" });
       return;
     } else {
-      setNotifType("success");
-      setNotif(isEditing ? "Item updated" : "Item added to the list");
+      setAlert({
+        notifType: "success",
+        notif: isEditing ? "Item updated" : "Item added to the list",
+      });
     }
   };
 
   //Clear notif after 3seconds
   useEffect(() => {
-    const timeout = setTimeout(() => setNotif(""), 3000);
+    const timeout = setTimeout(
+      () =>
+        setAlert({
+          notifType: "",
+          notif: "",
+        }),
+      3000
+    );
 
     return () => clearInterval(timeout);
-  }, [notif]);
+  }, [alert]);
 
   const handleAddItem = (e) => {
     e.preventDefault();
@@ -86,13 +93,11 @@ function App() {
       return [...newList];
     });
 
-    setNotifType("error");
-    setNotif("Item deleted from the list");
+    setAlert({ notifType: "error", notif: "Item deleted from the list" });
   };
 
   const handleClearAll = () => {
-    setNotifType("error");
-    setNotif("All items are deleted");
+    setAlert({ notifType: "error", notif: "All items are deleted" });
     setGroceryList([]);
     window.localStorage.removeItem("groceryList");
   };
@@ -106,16 +111,16 @@ function App() {
 
   return (
     <main className="App">
-      {notif && (
+      {alert.notif && (
         <div
           className="notif"
           style={{
             backgroundColor: `${
-              notifType === "success" ? "#008BFF" : "#ED195A"
+              alert.notifType === "success" ? "#008BFF" : "#ED195A"
             }`,
           }}
         >
-          {notif}
+          {alert.notif}
         </div>
       )}
 
